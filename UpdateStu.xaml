@@ -1,0 +1,84 @@
+﻿<Window x:Class="WpfApp1.UpdateStu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="修改" Height="300" Width="450">
+    <Grid Background="Lavender">
+        <Grid Margin="15 10 15 10" Background="AntiqueWhite">
+            <Grid Margin="60 20 60 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="0.3*"></RowDefinition>
+                    <RowDefinition Height="0.8*"></RowDefinition>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Background="BlanchedAlmond"></Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Label Content="姓名" HorizontalAlignment="Center" VerticalAlignment="Bottom"></Label>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <TextBox Name="sname_update"></TextBox>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Label Content="学号" HorizontalAlignment="Center" VerticalAlignment="Bottom"></Label>
+                    </Grid>
+                    <Grid Grid.Column="3">
+                        <TextBox Name="sno_update"></TextBox>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Label Content="年龄" HorizontalAlignment="Center" VerticalAlignment="Bottom"></Label>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <TextBox Name="sage_update"></TextBox>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Label Content="专业" HorizontalAlignment="Center" VerticalAlignment="Bottom"></Label>
+                    </Grid>
+                    <Grid Grid.Column="3">
+                        <TextBox Name="sdept_update"></TextBox>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="1">
+                        <Button Name="btn_update" Content="修改" Background="Salmon" Click="Btn_update_Click"></Button>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="5" Background="BlanchedAlmond">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Label Name="Imessage" Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom"></Label>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

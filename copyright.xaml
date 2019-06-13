@@ -1,0 +1,70 @@
+﻿<Window x:Class="WpfApp1.copyright"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="关于Student Database_zl6262(A)" Height="450" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Label Content="STU Database ZL" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontFamily="Mistral" FontSize="62" Background="{x:Null}" BorderBrush="White" Foreground="#FF0066CC" ></Label>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1">
+                    <TextBlock FontFamily="Yu Gothic UI Light">
+                    <Hyperlink Name="Hlink" NavigateUri="https://github.com/zl6262" Click="Hlink_Click" FontSize="22">订阅我的github   
+                    </Hyperlink>
+                    </TextBlock>
+                </Grid>
+                <Grid Grid.Row="2"></Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Background="#FFF0F0F0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1">
+                    <Label Content="STU Database ZL 2019 " FontSize="21"></Label>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Label Content="版本1.0.0" FontSize="21"></Label>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Label Content="©2019 ZL6262 " FontSize="21"></Label>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Label MaxWidth="800" VerticalAlignment="Bottom">
+                <TextBlock TextWrapping="Wrap" Text="警告:本计算机程序受版权法和国际条约保护，如未经授权而擅自复制、传播、修改本程序（或者其中任何部分）将受到严厉的刑事及民事制裁，并在法律允许的范围内受到最大可能的起诉。 "></TextBlock>
+            </Label>
+        </Grid>
+    </Grid>
+</Window>
